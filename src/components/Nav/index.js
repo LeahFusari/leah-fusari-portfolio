@@ -15,6 +15,11 @@ function Nav() {
             description: "My downloadable resume.",
         },
     ];
+
+    function sectionSelected(name) {
+        console.log(`${name} clicked`)
+      }
+
     return (
         <header>
             <h2>
@@ -30,7 +35,8 @@ function Nav() {
                     
                     {sections.map((sections) => (
                         <li className="mx-1" key={sections.name}>
-                            <span>{sections.name}</span>
+                            <span onClick={() => sectionSelected(sections.name)} >
+                            {sections.name}</span>
                         </li>
                     ))}
 
