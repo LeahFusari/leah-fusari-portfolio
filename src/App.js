@@ -6,15 +6,15 @@ import View from './components/View';
 function App() {
   const [categories] = useState([
     {
-        name: "Portfolio",
+        name: 'portfolio',
         description: "Website projects that I have built or contributed to.",
     },
     {
-        name: "Interests",
+        name: 'interests',
         description: "Some of my non-web development interests."
     },
     {
-        name: "Resume",
+        name: 'Resume',
         description: "My downloadable resume.",
     }
 ]);
