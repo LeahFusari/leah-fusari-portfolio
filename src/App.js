@@ -16,7 +16,7 @@ function App() {
     {
         name: "Resume",
         description: "My downloadable resume.",
-    },
+    }
 ]);
 
 const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -30,7 +30,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
       ></Nav>
       <main>
         <div>
-          <View></View>
+          <View currentCategory={currentCategory}></View>
           <About></About>
         </div>
       </main>
