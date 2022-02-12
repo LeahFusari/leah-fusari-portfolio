@@ -237,9 +237,14 @@ textarea {
 }
 
 .card {
-  width: 25%;
   text-align: center;
+  padding: 20px;
 }
+
+.card-title{
+  width: 100%;
+}
+
 
 .img-thumbnail {
   width: auto;

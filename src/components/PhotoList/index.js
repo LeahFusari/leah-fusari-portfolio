@@ -5,47 +5,56 @@ const PhotoList = ({ category }) => {
     {
       name: 'karate',
       category: 'interests',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'karate',
+      filename: 'karate.jpg'
     },
     {
       name: 'leah-guitar',
       category: 'interests',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'leah-guitar',
+      filename: 'guitar.jpg'
     },
     {
       name: 'outdoors',
       category: 'interests',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'outdoors',
+      filename: 'outdoors.jpg'
     },
     {
       name: 'rockhounding',
       category: 'interests',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'rockhounding',
+      filename: 'rockhound.jpg'
     },
     {
       name: 'holiday-exchange',
       category: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'holiday-exchange',
+      filename: 'holidayex.jpg'
     },
     {
       name: 'horiseon',
       category: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'horiseon',
+      filename: 'horision.jpg'
     },
     {
       name: 'run-buddy',
       category: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'run-buddy',
+      filename: 'runbuddy.jpg'
     },
     {
       name: 'take-it-or-leave-it',
       category: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'take-it-or-leave-it',
+      filename: 'takeorleave.jpg'
     },
     {
       name: 'weather',
       category: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'weather',
+      filename: 'weather.jpg'
     }
   ]);
 
@@ -55,18 +64,27 @@ const PhotoList = ({ category }) => {
   return (
     <div>
       <div className="flex-row">
-        {currentPhotos.map((image, i) => (
-          <img
-            src={require(`../../assets/images/${category}/${i}.jpg`)}
-            alt={image.name}
-            className="img-thumbnail mx-1"
-            key={image.name}
-          />
-        ))}
+        {currentPhotos.map((image, i) => {
+          const { filename, name, description } = image //destructuring
+          return (
+            <div key={i} >
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">{name}</h5>
+                  <p className="card-text">{description}</p>
+                  <img src={require(`../../assets/images/${category}/${filename}`)}
+                    alt={name}
+                    className="img-thumbnail"
+                  />
+                </div>
+              </div>
+            </div>
+          )
+        })}
       </div>
-    </div>
+    </div >
   );
-  
+
 }
 
 export default PhotoList;
