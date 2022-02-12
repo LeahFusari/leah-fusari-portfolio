@@ -13,13 +13,13 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 //     </section>
 //   );
 // }
-function View(props) {
-  const { currentCategory } = props;
+function View({ currentCategory }) {
+  const { name, description } = currentCategory;
   return (
     <section>
-      <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-      <p>{currentCategory.description}</p>
-      <PhotoList category={currentCategory.name} />
+      <h1>{capitalizeFirstLetter(name)}</h1>
+      <p>{description}</p>
+      <PhotoList category={name} />
     </section>
   );
 }

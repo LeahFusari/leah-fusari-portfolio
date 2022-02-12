@@ -33,12 +33,12 @@ function Nav(props) {
           }, [currentCategory]);
           
     return (
-        <header className="flex-row px-1">
-            <h2>
-                <a href="/">
-                    <span role="img" aria-label="guitar"> </span> Leah Fusari 🎸
-                </a>
-            </h2>
+        // <header className="flex-row px-1">
+        //     <h2>
+        //         <a href="/">
+        //             <span role="img" aria-label="guitar"> </span> Leah Fusari 🎸
+        //         </a>
+        //     </h2>
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
@@ -63,7 +63,7 @@ function Nav(props) {
                     </li>
                 </ul>
             </nav>
-        </header>
+        // </header>
     );
 }
 
