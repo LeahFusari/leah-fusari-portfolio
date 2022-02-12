@@ -1,18 +1,8 @@
 import React from 'react';
 import PhotoList from '../PhotoList';
+import About from '../About';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-// import photo from "../../assets/images/projects/holiday-exchange.jpg";
 
-// function View ({ currentCategory }) {
-//   const { name, description } = currentCategory;
-//   return (
-//     <section>
-//       <h1 data-testid="h1tag">{capitalizeFirstLetter(name)}</h1>
-//       <p>{description}</p>
-//       <PhotoList />
-//     </section>
-//   );
-// }
 function View({ currentCategory }) {
   const { name, description } = currentCategory;
   return (
@@ -20,6 +10,7 @@ function View({ currentCategory }) {
       <h1>{capitalizeFirstLetter(name)}</h1>
       <p>{description}</p>
       <PhotoList category={name} />
+      <About/>
     </section>
   );
 }

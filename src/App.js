@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
-import About from './components/About';
 import Nav from './components/Nav';
 import View from './components/View';
 
 function App() {
   const [categories] = useState([
     {
-        name: 'portfolio',
-        description: "Website projects that I have built or contributed to.",
+      name: 'About Me',
+      // description: "",
     },
     {
-        name: 'interests',
-        description: "Some of my non-web development interests."
+      name: 'portfolio',
+      description: "Website projects that I have built or contributed to.",
     },
     {
-        name: 'Resume',
-        description: "My downloadable resume.",
+      name: 'interests',
+      description: "Some of my non-web development interests."
+    },
+    {
+      name: 'Resume',
+      description: "My downloadable resume.",
     }
-]);
+  ]);
 
-const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
     <div>
@@ -31,7 +34,6 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
       <main>
         <div>
           <View currentCategory={currentCategory}></View>
-          <About></About>
         </div>
       </main>
     </div>
