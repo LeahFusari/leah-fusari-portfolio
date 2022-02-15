@@ -14,6 +14,11 @@ function Nav(props) {
           
     return (
             <nav>
+              <h1>
+            <a href="/">
+                  <span role="img" aria-label="guitar"> </span> Leah Fusari 🎸
+              </a>
+          </h1>
                 <ul className="flex-row">
                     {categories.map((category) => (
                         <li className={`mx-1 ${

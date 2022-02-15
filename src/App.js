@@ -6,7 +6,6 @@ function App() {
   const [categories] = useState([
     {
       name: 'About Me',
-      // description: "",
     },
     {
       name: 'portfolio',
