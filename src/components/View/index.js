@@ -1,6 +1,8 @@
 import React from 'react';
 import PhotoList from '../PhotoList';
 import About from '../About';
+import Resume from '../Resume';
+
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function View({ currentCategory }) {
@@ -8,7 +10,9 @@ function View({ currentCategory }) {
 
   if (currentCategory.name === 'About Me') {
     return <About />;
-  } else {
+  } else if (currentCategory.name === 'Resume'){
+    return <Resume />;
+  }else {
     return (
       <section>
         <h1>{capitalizeFirstLetter(name)}</h1>
