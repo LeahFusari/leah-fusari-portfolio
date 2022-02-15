@@ -1,8 +1,5 @@
 import React from 'react';
-// import profileImage from "../../assets/images/LeahProfilePic.jpg";
 import respdf from "../../assets/resume.pdf"
-// import PhotoList from '../PhotoList';
-
 
 function Resume() {
     return (
