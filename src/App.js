@@ -18,7 +18,7 @@ function App() {
     },
     {
       name: 'resume',
-      description: "My downloadable resume.",
+      // description: "My downloadable resume.",
     },
   ]);
 

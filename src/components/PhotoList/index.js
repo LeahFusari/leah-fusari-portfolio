@@ -59,15 +59,33 @@ const PhotoList = ({ category }) => {
     {
       name: 'HTML/CSS/JS',
       category: 'resume',
-      description: 'HTML/CSS/JS',
+      // description: 'HTML/CSS/JS',
       filename: 'htmlcssjs.jpg'
     },
     {
       name: 'MySQL',
       category: 'resume',
-      description: 'MySQL',
+      // description: 'MySQL',
       filename: 'MySQL.jpg'
-    }
+    },
+    {
+      name: 'React',
+      category: 'resume',
+      // description: 'React',
+      filename: 'react.jpg'
+    },
+    {
+      name: 'MongoDB',
+      category: 'resume',
+      // description: 'MySQL',
+      filename: 'mongodb.jpg'
+    },
+    {
+      name: 'RESTful API',
+      category: 'resume',
+      // description: 'React',
+      filename: 'restful.jpg'
+    },
   ]);
 
   const currentPhotos = photos.filter(photo => photo.category === category);
