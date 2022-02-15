@@ -5,7 +5,9 @@ import profileImage from "../../assets/images/LeahProfilePic.jpg";
 function About() {
     return (
       <div>
+        <h1>About Me</h1>
       <section className="my-5">
+        
         <img src={profileImage} className="my-2" style={{ width: "30%" }} alt="cover" />
         <div id= "about-text" className="container-md">
           <p>I am an experienced professional with proficiency in coordinating a variety of projects, managing training operations, and working with a wide customer base.
