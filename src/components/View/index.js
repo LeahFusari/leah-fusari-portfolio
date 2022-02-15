@@ -10,8 +10,15 @@ function View({ currentCategory }) {
 
   if (currentCategory.name === 'About Me') {
     return <About />;
-  } else if (currentCategory.name === 'Resume'){
-    return <Resume />;
+  } else if (currentCategory.name === 'resume'){
+    return (
+      <section>
+        <h1>{capitalizeFirstLetter(name)}</h1>
+        <p>{description}</p>
+        <Resume/>
+        <PhotoList category={name} />
+      </section>
+    )
   }else {
     return (
       <section>

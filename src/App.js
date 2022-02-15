@@ -17,9 +17,9 @@ function App() {
       description: "Some of my non-web development interests."
     },
     {
-      name: 'Resume',
+      name: 'resume',
       description: "My downloadable resume.",
-    }
+    },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);

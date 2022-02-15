@@ -55,6 +55,18 @@ const PhotoList = ({ category }) => {
       category: 'portfolio',
       description: 'weather',
       filename: 'weather.jpg'
+    },
+    {
+      name: 'HTML/CSS/JS',
+      category: 'resume',
+      description: 'HTML/CSS/JS',
+      filename: 'htmlcssjs.jpg'
+    },
+    {
+      name: 'MySQL',
+      category: 'resume',
+      description: 'MySQL',
+      filename: 'MySQL.jpg'
     }
   ]);
 
