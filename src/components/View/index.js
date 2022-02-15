@@ -5,14 +5,18 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function View({ currentCategory }) {
   const { name, description } = currentCategory;
-  return (
-    <section>
-      <h1>{capitalizeFirstLetter(name)}</h1>
-      <p>{description}</p>
-      <PhotoList category={name} />
-      <About/>
-    </section>
-  );
+
+  if (currentCategory.name === 'About Me') {
+    return <About />;
+  } else {
+    return (
+      <section>
+        <h1>{capitalizeFirstLetter(name)}</h1>
+        <p>{description}</p>
+        <PhotoList category={name} />
+      </section>
+    )
+  };
 }
 
-  export default View;
+export default View;
