@@ -18,8 +18,11 @@ function App() {
     },
     {
       name: 'resume',
-      // description: "My downloadable resume.",
     },
+    {
+      name: 'contact',
+    }
+
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);

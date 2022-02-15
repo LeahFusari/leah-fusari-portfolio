@@ -28,9 +28,9 @@ function Nav(props) {
                           </span>
                         </li>
                     ))}
-                    <li>
+                    {/* <li>
                         <span>Contact</span>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
     );
