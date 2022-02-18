@@ -14,12 +14,7 @@ function Nav(props) {
           
     return (
             <nav>
-              <h1>
-            <a href="/">
-                  <span role="img" aria-label="guitar"> </span> Leah Fusari 🎸
-              </a>
-          </h1>
-                <ul className="flex-row">
+                <ul className="d-flex flex-row">
                     {categories.map((category) => (
                         <li className={`mx-1 ${
                             currentCategory.name === category.name && 'navActive'
@@ -33,9 +28,6 @@ function Nav(props) {
                           </span>
                         </li>
                     ))}
-                    {/* <li>
-                        <span>Contact</span>
-                    </li> */}
                 </ul>
             </nav>
     );

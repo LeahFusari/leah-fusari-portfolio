@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Project from '../Project';
 
 const PhotoList = ({ category }) => {
   const [photos] = useState([
@@ -96,20 +97,28 @@ const PhotoList = ({ category }) => {
       <div className="flex-row">
         {currentPhotos.map((image, i) => {
           const { filename, name, description } = image //destructuring
-          return (
-            <div key={i} >
-              <div className="card">
-                <div className="card-body">
-                  <h5 className="card-title">{name}</h5>
-                  <p className="card-text">{description}</p>
-                  <img src={require(`../../assets/images/${category}/${filename}`)}
-                    alt={name}
-                    className="img-thumbnail"
-                  />
-                </div>
-              </div>
-            </div>
-          )
+          return(
+            <Project
+            key={i}
+            name={name}
+            description={description}
+            filename={filename}
+            category={category}
+            />)
+          // return (
+          //   <div key={i} >
+          //     <div className="card">
+          //       <div className="card-body">
+          //         <h5 className="card-title">{name}</h5>
+          //         <p className="card-text">{description}</p>
+          //         <img src={require(`../../assets/images/${category}/${filename}`)}
+          //           alt={name}
+          //           className="img-thumbnail"
+          //         />
+          //       </div>
+          //     </div>
+          //   </div>
+          // )
         })}
       </div>
     </div >

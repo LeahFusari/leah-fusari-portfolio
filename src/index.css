@@ -174,10 +174,10 @@ textarea {
   margin-right: auto;
 }
 
-.flex-row {
+/* .flex-row {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .space-between {
   justify-content: space-between;
