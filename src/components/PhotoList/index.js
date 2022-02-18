@@ -4,27 +4,23 @@ import Project from '../Project';
 const PhotoList = ({ category }) => {
   const [photos] = useState([
     {
-      name: 'karate',
+      name: 'Karate',
       category: 'interests',
-      description: 'karate',
       filename: 'karate.jpg'
     },
     {
       name: 'leah-guitar',
       category: 'interests',
-      description: 'leah-guitar',
       filename: 'guitar.jpg'
     },
     {
       name: 'outdoors',
       category: 'interests',
-      description: 'outdoors',
       filename: 'outdoors.jpg'
     },
     {
       name: 'rockhounding',
       category: 'interests',
-      description: 'rockhounding',
       filename: 'rockhound.jpg'
     },
     {
@@ -94,7 +90,7 @@ const PhotoList = ({ category }) => {
   console.log(category)
   return (
     <div>
-      <div className="flex-row">
+      <div className="d-flex flex-row flex-wrap">
         {currentPhotos.map((image, i) => {
           const { filename, name, description } = image //destructuring
           return(
@@ -105,20 +101,6 @@ const PhotoList = ({ category }) => {
             filename={filename}
             category={category}
             />)
-          // return (
-          //   <div key={i} >
-          //     <div className="card">
-          //       <div className="card-body">
-          //         <h5 className="card-title">{name}</h5>
-          //         <p className="card-text">{description}</p>
-          //         <img src={require(`../../assets/images/${category}/${filename}`)}
-          //           alt={name}
-          //           className="img-thumbnail"
-          //         />
-          //       </div>
-          //     </div>
-          //   </div>
-          // )
         })}
       </div>
     </div >

@@ -122,8 +122,8 @@ button[disabled] {
 }
 
 img {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 span[role="img"] {
@@ -239,6 +239,7 @@ textarea {
 .card {
   text-align: center;
   padding: 20px;
+  background:none;
 }
 
 .card-title{
@@ -246,12 +247,12 @@ textarea {
 }
 
 
-.img-thumbnail {
+/* .img-thumbnail {
   width: auto;
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
-}
+} */
 
 .modalBackdrop {
 	background: rgba(0, 0, 0, .65);
