@@ -26,7 +26,7 @@ const PhotoList = ({ category }) => {
     {
       name: 'holiday-exchange',
       category: 'portfolio',
-      description: 'holiday-exchange',
+      description: 'Front end project using third-party APIs',
       filename: 'holidayex.jpg'
     },
     {

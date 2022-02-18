@@ -4,10 +4,25 @@ main {
 	max-width: 90%;
   padding: 50px 30px;
 }
-:root {
+/* :root {
   --primary: #8c54ff;
   --secondary: #F3A847;
   --tertiary: #B12704;
+  --light: #fafafa;
+  --dark: #000000;
+  --darker: #111111;
+  --error: rgb(228, 46, 1);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+  --spacing-five: calc(2.5rem);
+
+} */
+
+:root {
+  --primary: #5d99d7;;
+  --secondary: #afbfd6;
+  --tertiary-fade: rgb(49,87,131,0.6);
+  --tertiary: #315783;
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
@@ -93,7 +108,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--tertiary);
 }
 
 header a {
@@ -122,8 +137,10 @@ button[disabled] {
 }
 
 img {
-  max-width: 300px;
-  max-height: 300px;
+    width:  400px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 7px 5px 5px var(--darker);
 }
 
 span[role="img"] {
@@ -137,7 +154,7 @@ form {
 input {
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--tertiary);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
@@ -236,16 +253,33 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
+/* .card {
   text-align: center;
   padding: 20px;
   background:none;
-}
+} */
 
-.card-title{
+/* .card-title, .card-text{
   width: 100%;
+  text-align: center;
+} */
+
+.card-text{
+  font-size: 15px;
 }
 
+.label{
+  position: absolute;
+  bottom: 30px;
+  left: 16px;
+  background-color: var(--tertiary-fade);
+}
+
+.card-body{
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
 /* .img-thumbnail {
   width: auto;
