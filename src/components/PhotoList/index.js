@@ -24,10 +24,22 @@ const PhotoList = ({ category }) => {
       filename: 'rockhound.jpg'
     },
     {
+      name: 'Take-It-Or-Leave-It',
+      category: 'portfolio',
+      description: 'Interactive full-stack project. This text is not supposed to be out of the container but it totally is out of the container.',
+      filename: 'takeorleave.jpg'
+    },
+    {
       name: 'holiday-exchange',
       category: 'portfolio',
-      description: 'Front end project using third-party APIs',
+      description: 'Front end project using third-party APIs. This text is not supposed to be out of the container.',
       filename: 'holidayex.jpg'
+    },
+    {
+      name: 'weather',
+      category: 'portfolio',
+      description: 'weather',
+      filename: 'weather.jpg'
     },
     {
       name: 'horiseon',
@@ -40,18 +52,6 @@ const PhotoList = ({ category }) => {
       category: 'portfolio',
       description: 'run-buddy',
       filename: 'runbuddy.jpg'
-    },
-    {
-      name: 'take-it-or-leave-it',
-      category: 'portfolio',
-      description: 'take-it-or-leave-it',
-      filename: 'takeorleave.jpg'
-    },
-    {
-      name: 'weather',
-      category: 'portfolio',
-      description: 'weather',
-      filename: 'weather.jpg'
     },
     {
       name: 'HTML/CSS/JS',

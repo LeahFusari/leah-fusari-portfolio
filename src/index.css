@@ -4,19 +4,6 @@ main {
 	max-width: 90%;
   padding: 50px 30px;
 }
-/* :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
-  --light: #fafafa;
-  --dark: #000000;
-  --darker: #111111;
-  --error: rgb(228, 46, 1);
-  --spacing-one: calc(1rem * 0.5);
-  --spacing-two: calc(1rem);
-  --spacing-five: calc(2.5rem);
-
-} */
 
 :root {
   --primary: #5d99d7;;
@@ -191,11 +178,6 @@ textarea {
   margin-right: auto;
 }
 
-/* .flex-row {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
 .space-between {
   justify-content: space-between;
 }
@@ -253,40 +235,39 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-/* .card {
-  text-align: center;
-  padding: 20px;
-  background:none;
-} */
-
-/* .card-title, .card-text{
-  width: 100%;
-  text-align: center;
-} */
-
-.card-text{
+.description{
   font-size: 15px;
+  max-height: 75px;
+  word-wrap: break-word;
+  color: var(--dark)
 }
+
+/* .description:hover{
+  overflow: visible;
+} */
 
 .label{
   position: absolute;
-  bottom: 30px;
+  bottom: 45px;
   left: 16px;
   background-color: var(--tertiary-fade);
+  max-width: 300px;
+  height: 75px;
+  overflow: hidden;
+}
+
+.label > p {
+  max-height: 20px;
+}
+
+.label:hover, label:active{
+  height: 200px;
 }
 
 .card-body{
   position: relative;
   text-align: center;
-  color: white;
 }
-
-/* .img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
-} */
 
 .modalBackdrop {
 	background: rgba(0, 0, 0, .65);
@@ -343,3 +324,4 @@ a {
 #about-text{
   padding: 0px 30px;
 }
+

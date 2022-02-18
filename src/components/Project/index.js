@@ -7,7 +7,8 @@ function Project(props){
             <div className="card-body">
               <div className= "label">
               <h5 className="card-title">{props.name}</h5>
-              <p className="card-text">{props.description}</p>
+              {props.description}
+              {/* <p className="description">{props.description}</p> */}
               </div>
               <img src={require(`../../assets/images/${props.category}/${props.filename}`)}
                 alt={props.name}
