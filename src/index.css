@@ -143,10 +143,14 @@ span[role="img"] {
 
 .header-div {
   justify-content: space-between;
+  height: 50px;
+}
+.header-div > a{
+  padding: 0px;
 }
 
 nav {
-  margin: 20px 0px;
+  margin: 0px;
 }
 
 span {
