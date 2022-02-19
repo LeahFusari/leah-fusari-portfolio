@@ -49,7 +49,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -96,10 +95,12 @@ a:hover {
 
 header {
   background: var(--tertiary);
+  /* position: sticky; */
 }
 
 header a {
   color: var(--light);
+  padding: 15px;
 }
 
 button {
@@ -134,6 +135,22 @@ span[role="img"] {
   cursor: default;
 }
 
+.header-div{
+  justify-content: space-between;
+}
+
+nav{
+  margin: 20px 0px;
+}
+
+span{
+  margin: 10px;
+}
+
+.my-name{
+  margin: 0px 30px;
+}
+
 form {
   width: 40%;
 }
@@ -156,7 +173,7 @@ li {
   list-style: none;
 }
 
-nav a:hover {
+a:hover {
   text-decoration: none;
 }
 
@@ -242,10 +259,6 @@ textarea {
   color: var(--dark)
 }
 
-/* .description:hover{
-  overflow: visible;
-} */
-
 .label{
   position: absolute;
   bottom: 45px;
@@ -254,6 +267,8 @@ textarea {
   max-width: 300px;
   height: 75px;
   overflow: hidden;
+  font-size: 15px;
+  
 }
 
 .label > p {
@@ -264,9 +279,17 @@ textarea {
   height: 200px;
 }
 
+.label > h4{
+  font-family: 'Poiret One', cursive;
+}
+
 .card-body{
   position: relative;
   text-align: center;
+}
+
+section{
+  font-family: 'Poiret One', cursive;
 }
 
 .modalBackdrop {

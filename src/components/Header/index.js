@@ -5,9 +5,9 @@ function Header(props) {
   console.log(props)
   return (
    <header>
-    <h1 className='d-flex flex-row'>
+    <div className='header-div d-flex flex-row'>
       <a href="/">
-        <span role="img" aria-label="guitar"> </span> Leah Fusari 🎸
+        <h1 className= "my-name">Leah Fusari 🎸</h1>
       </a>
       <h3>
       <Nav
@@ -16,7 +16,7 @@ function Header(props) {
         currentCategory={props.currentCategory} 
         />
         </h3>
-    </h1>
+    </div>
     </header> 
   );
 }

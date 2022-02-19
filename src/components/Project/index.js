@@ -6,7 +6,7 @@ function Project(props){
           <div>
             <div className="card-body">
               <div className= "label">
-              <h5 className="card-title">{props.name}</h5>
+              <h4 className="card-title">{props.name}</h4>
               {props.description}
               {/* <p className="description">{props.description}</p> */}
               </div>

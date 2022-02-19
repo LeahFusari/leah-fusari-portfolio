@@ -24,33 +24,33 @@ const PhotoList = ({ category }) => {
       filename: 'rockhound.jpg'
     },
     {
-      name: 'Take-It-Or-Leave-It',
+      name: 'Take It Or Leave It',
       category: 'portfolio',
-      description: 'Interactive full-stack project. This text is not supposed to be out of the container but it totally is out of the container.',
+      description: 'Interactive full-stack group project.  A social media-type app where people can trade items.  I worked on the back end using Express.js and MySQL.',
       filename: 'takeorleave.jpg'
     },
     {
-      name: 'holiday-exchange',
+      name: 'Holiday Exchange',
       category: 'portfolio',
-      description: 'Front end project using third-party APIs. This text is not supposed to be out of the container.',
+      description: 'Front-end project using third-party APIs.  I was put in charge of the HTML and CSS.',
       filename: 'holidayex.jpg'
     },
     {
-      name: 'weather',
+      name: 'Weather Dashboard',
       category: 'portfolio',
-      description: 'weather',
+      description: 'An interactive front-end solo project using a third-Party API and local storage.',
       filename: 'weather.jpg'
     },
     {
-      name: 'horiseon',
+      name: 'Horiseon',
       category: 'portfolio',
-      description: 'horiseon',
+      description: 'This is a placeholder project from a Module Lesson.',
       filename: 'horision.jpg'
     },
     {
-      name: 'run-buddy',
+      name: 'Run-buddy',
       category: 'portfolio',
-      description: 'run-buddy',
+      description: 'This is a placeholder project from a Module Lesson.',
       filename: 'runbuddy.jpg'
     },
     {
