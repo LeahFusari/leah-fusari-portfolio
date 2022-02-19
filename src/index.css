@@ -5,10 +5,10 @@ main {
 }
 
 :root {
-  --primary: #5d99d7;
+  --sky: #5d99d7;
   --secondary: #afbfd6;
-  --tertiary-fade: rgb(49, 87, 131, 0.6);
-  --tertiary: #315783;
+  --tertiary-fade: rgb(48, 87, 130, 0.6);
+  --tertiary: rgb(48, 87, 130);
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
@@ -86,12 +86,12 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 header {
-  background: var(--primary);
+  background-color: var(--sky);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -137,9 +137,9 @@ img {
   justify-content: space-evenly;
 }
 
-span[role="img"] {
+/* span[role="img"] {
   cursor: default;
-}
+} */
 
 .header-div {
   justify-content: space-between;
@@ -183,9 +183,9 @@ li {
   list-style: none;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: none;
-}
+} */
 
 nav li {
   cursor: pointer;
@@ -198,20 +198,20 @@ textarea {
   padding: 5px;
 }
 
-.container {
+/* .container {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-.space-between {
+/* .space-between {
   justify-content: space-between;
-}
+} */
 
-.flex-end {
+/* .flex-end {
   justify-content: flex-end;
-}
+} */
 
 .mx-1 {
   margin-right: var(--spacing-one);
@@ -302,7 +302,7 @@ section {
   font-family: "Poiret One", cursive;
 }
 
-.modalBackdrop {
+/* .modalBackdrop {
   background: rgba(0, 0, 0, 0.65);
   bottom: 0;
   left: 0;
@@ -311,25 +311,25 @@ section {
   right: 0;
   top: 0;
   z-index: 1;
-}
+} */
 
-.modalContainer {
+/* .modalContainer {
   background: var(--darker);
   border-radius: 5px;
   max-width: 100%;
   margin: 50px auto;
   padding: 15px;
   width: 960px;
-}
+} */
 
-.modalTitle {
+/* .modalTitle {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 25px;
-}
+} */
 
 button {
-  background: var(--primary);
+  background: var(--sky);
   border: 0;
   border-radius: 5px;
   color: #fff;
@@ -342,7 +342,7 @@ button {
 
 a {
   border-radius: 5px;
-  /* color: var(--primary); */
+  color: var(--light);
   font-weight: 600;
   padding: 2px 4px;
   margin-left: -2px;
@@ -355,4 +355,26 @@ a {
 
 #about-text {
   padding: 0px 30px;
+}
+
+#about-text p{
+  font-size: 20px;
+}
+.p-img {
+  border-radius: 50%;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--sky);
+}
+
+.foot-anchor-container {
+  margin-top: 5px;
+}
+
+.foot-anchor-container > a{
+margin: 0px 10px;
 }
