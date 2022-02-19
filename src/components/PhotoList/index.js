@@ -6,52 +6,54 @@ const PhotoList = ({ category }) => {
     {
       name: 'Karate',
       category: 'interests',
-      filename: 'karate.jpg'
+      filename: 'karate.jpg',
+      url: require('../../assets/images/interests/karate.jpg')
     },
     {
       name: 'leah-guitar',
       category: 'interests',
-      filename: 'guitar.jpg'
+      filename: 'guitar.jpg',
+      url: require('../../assets/images/interests/guitar.jpg')
     },
     {
       name: 'outdoors',
       category: 'interests',
-      filename: 'outdoors.jpg'
+      filename: 'outdoors.jpg',
+      url: require('../../assets/images/interests/outdoors.jpg')
     },
     {
       name: 'rockhounding',
       category: 'interests',
-      filename: 'rockhound.jpg'
+      filename: 'rockhound.jpg',
+      url: require('../../assets/images/interests/rockhound.jpg')
     },
     {
       name: 'Take It Or Leave It',
       category: 'portfolio',
       description: 'Interactive full-stack group project.  A social media-type app where people can trade items.  I worked on the back end using Express.js and MySQL.',
-      filename: 'takeorleave.jpg'
+      filename: 'takeorleave.jpg',
+      url: 'https://desolate-dusk-43697.herokuapp.com/'
     },
     {
       name: 'Holiday Exchange',
       category: 'portfolio',
       description: 'Front-end project using third-party APIs.  I was put in charge of the HTML and CSS.',
-      filename: 'holidayex.jpg'
+      filename: 'holidayex.jpg',
+      url: 'https://holmesmainsend.github.io/holiday-exchange/'
     },
     {
       name: 'Weather Dashboard',
       category: 'portfolio',
       description: 'An interactive front-end solo project using a third-Party API and local storage.',
-      filename: 'weather.jpg'
-    },
-    {
-      name: 'Horiseon',
-      category: 'portfolio',
-      description: 'This is a placeholder project from a Module Lesson.',
-      filename: 'horision.jpg'
+      filename: 'weather.jpg',
+      url:"https://leahfusari.github.io/weather-dashboard-challenge/"
     },
     {
       name: 'Run-buddy',
       category: 'portfolio',
       description: 'This is a placeholder project from a Module Lesson.',
-      filename: 'runbuddy.jpg'
+      filename: 'runbuddy.jpg',
+      url:"https://leahfusari.github.io/Run-Buddy/"
     },
     {
       name: 'HTML/CSS/JS',
@@ -90,9 +92,9 @@ const PhotoList = ({ category }) => {
   console.log(category)
   return (
     <div>
-      <div className="d-flex flex-row flex-wrap">
+      <div className="photo-box d-flex flex-row flex-wrap">
         {currentPhotos.map((image, i) => {
-          const { filename, name, description } = image //destructuring
+          const { filename, name, description, url } = image //destructuring
           return(
             <Project
             key={i}
@@ -100,6 +102,7 @@ const PhotoList = ({ category }) => {
             description={description}
             filename={filename}
             category={category}
+            url={url}
             />)
         })}
       </div>

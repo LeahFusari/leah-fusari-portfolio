@@ -4,7 +4,7 @@ import Nav from '../Nav';
 function Header(props) {
   console.log(props)
   return (
-   <header>
+   <header >
     <div className='header-div d-flex flex-row'>
       <a href="/">
         <h1 className= "my-name">Leah Fusari 🎸</h1>

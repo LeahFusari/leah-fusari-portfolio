@@ -2,9 +2,9 @@ import React from "react";
 
 function Project(props){
     return (
+      
         <div className="d-flex flex-row">
-          <div>
-            <div className="card-body">
+            <a className="card-body" href={props.url} target="_blank" rel="noreferrer" >
               <div className= "label">
               <h4 className="card-title">{props.name}</h4>
               {props.description}
@@ -14,9 +14,7 @@ function Project(props){
                 alt={props.name}
                 // className="img-thumbnail"
               />
-              
-            </div>
-          </div>
+            </a>
         </div>
       )
 }
