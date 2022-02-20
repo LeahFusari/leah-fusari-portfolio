@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
+// using State to display errors
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
 
+  //submit data 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
       setFormState({ [e.target.name]: e.target.value });
-      console.log('Form', formState);
     }
   };
 
+  //handles which error you receive
   const handleChange = (e) => {
     if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);
@@ -32,6 +34,7 @@ function ContactForm() {
     }
   };
 
+  //returns the contact form
   return (
     <section>
       <h1 className='view-name'>Contact me</h1>

@@ -1,5 +1,6 @@
 import React from "react";
 
+//Project component to render the cards for the PhotoList Component
 function Project(props){
     return (
       

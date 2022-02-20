@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Project from '../Project';
 
+//renders the photos for the Portfolio, Interests and the proficiencies in the Resume component.
 const PhotoList = ({ category }) => {
   const [photos] = useState([
     {
@@ -88,8 +89,7 @@ const PhotoList = ({ category }) => {
   ]);
 
   const currentPhotos = photos.filter(photo => photo.category === category);
-  console.log(currentPhotos)
-  console.log(category)
+
   return (
     <div container-sm>
       <div className="photo-box d-flex flex-row flex-wrap">

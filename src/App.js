@@ -3,6 +3,7 @@ import View from './components/View';
 import Footer from './components/Footer';
 import Header from './components/Header';
 
+// defines the categories to pass
 function App() {
   const [categories] = useState([
     {
@@ -27,6 +28,7 @@ function App() {
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
+  //returns the basic page setup
   return (
     <div>
       <Header

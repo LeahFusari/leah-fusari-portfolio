@@ -1,12 +1,6 @@
-/* main {
-  margin: 0 auto;
-  max-width: 90%;
-  padding: 10px 30px;
-} */
-
 :root {
-  --sky: rgb(93, 153, 215);
-  --sky-fade: rgb(93, 153, 215, 0.5);
+  --primary: rgb(93, 153, 215);
+  --primary-fade: rgb(93, 153, 215, 0.5);
   --secondary: #afbfd6;
   --tertiary-fade: rgb(48, 87, 130, 0.6);
   --tertiary: rgb(48, 87, 130);
@@ -15,9 +9,6 @@
   --dark: #000000;
   --darker: #111111;
   --error: rgb(228, 46, 1);
-  --spacing-one: calc(1rem * 0.5);
-  --spacing-two: calc(1rem);
-  --spacing-five: calc(2.5rem);
 }
 
 * {
@@ -40,7 +31,6 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  /* background: var(--dark); */
   color: var(--light);
   font-family: "Poiret One", cursive;
   background-image: url(./assets/images/White-Mountains.jpg);
@@ -88,17 +78,11 @@ p {
 }
 
 a {
-  /* color: var(--tertiary); */
   text-decoration: none;
   font-weight: bold;
 }
 
-/* a:hover {
-  text-decoration: underline;
-} */
-
 header {
-  /* background-color: var(--sky-fade); */
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -116,19 +100,19 @@ header a {
 }
 
 button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  outline: none;
+  background: var(--primary) !important;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
   cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 15px;
 }
 
 button:hover {
-  opacity: 0.8;
+  background-color: var(--tertiary) !important;
 }
 
 button[disabled] {
@@ -145,10 +129,6 @@ img {
 .photo-box{
   justify-content: space-evenly;
 }
-
-/* span[role="img"] {
-  cursor: default;
-} */
 
 .header-div {
   justify-content: space-between;
@@ -203,10 +183,6 @@ li {
   list-style: none;
 }
 
-/* a:hover {
-  text-decoration: none;
-} */
-
 nav li {
   cursor: pointer;
 }
@@ -217,72 +193,6 @@ textarea {
   border: 3px solid #cccccc;
   padding: 5px;
 }
-
-/* .container {
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-/* .space-between {
-  justify-content: space-between;
-} */
-
-/* .flex-end {
-  justify-content: flex-end;
-} */
-
-/* .mx-1 {
-  margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
-}
-
-.mx-2 {
-  margin-right: var(--spacing-two);
-  margin-left: var(--spacing-two);
-}
-
-.my-1 {
-  margin-top: var(--spacing-one);
-  margin-bottom: var(--spacing-one);
-}
-
-.my-2 {
-  margin-top: var(--spacing-two);
-  margin-bottom: var(--spacing-two);
-  height: 50%;
-  width: 100%;
-}
-
-.my-5 {
-  margin-top: var(--spacing-five);
-  margin-bottom: var(--spacing-five);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.px-1 {
-  padding-right: var(--spacing-one);
-  padding-left: var(--spacing-one);
-}
-
-.px-2 {
-  padding-right: var(--spacing-two);
-  padding-left: var(--spacing-two);
-}
-
-.py-1 {
-  padding-top: var(--spacing-one);
-  padding-bottom: var(--spacing-one);
-}
-
-.py-2 {
-  padding-top: var(--spacing-two);
-  padding-bottom: var(--spacing-two);
-} */
 
 .me-4:hover {
 color: var(--tertiary);
@@ -331,44 +241,6 @@ section {
   font-family: "Poiret One", cursive;
 }
 
-/* .modalBackdrop {
-  background: rgba(0, 0, 0, 0.65);
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1;
-} */
-
-/* .modalContainer {
-  background: var(--darker);
-  border-radius: 5px;
-  max-width: 100%;
-  margin: 50px auto;
-  padding: 15px;
-  width: 960px;
-} */
-
-/* .modalTitle {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 25px;
-} */
-
-button {
-  background: var(--sky);
-  border: 0;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  padding: 10px 15px;
-}
-
 a {
   border-radius: 5px;
   color: var(--light);
@@ -381,14 +253,6 @@ a {
 .navActive {
   color: var(--tertiary);
 }
-
-/* #about-text {
-  padding: 0px 30px;
-} */
-
-/* #about-text p{
-  font-size: 20px;
-} */
 
 .about-section, .header-content{
   display: flex;
@@ -416,7 +280,7 @@ a {
   margin: 20px 50px;
 }
 footer{
-  background-color: var(--sky-fade);
+  background-color: var(--primary-fade);
   color: var(--light);
   position: -webkit-sticky;
   position: sticky;
