@@ -91,7 +91,7 @@ const PhotoList = ({ category }) => {
   console.log(currentPhotos)
   console.log(category)
   return (
-    <div>
+    <div container-sm>
       <div className="photo-box d-flex flex-row flex-wrap">
         {currentPhotos.map((image, i) => {
           const { filename, name, description, url } = image //destructuring

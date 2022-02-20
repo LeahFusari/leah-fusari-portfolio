@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
@@ -35,27 +34,29 @@ function ContactForm() {
 
   return (
     <section>
-      <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+      <h1 className='view-name'>Contact me</h1>
+      <container className="form-container">
+      <form id="contact-form" onSubmit={handleSubmit}>        
+        <div className="form-outline mb-4">
+          <label className="form-label" htmlFor="name">Name:</label>
+          <input className="form-control" type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+        <div className="form-outline mb-4">
+          <label className="form-label" htmlFor="email">Email address:</label>
+          <input className="form-control" type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+        <div className="form-outline mb-4">
+          <label className="form-label" htmlFor="message">Message:</label>
+          <textarea className="form-control" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button className="btn btn-primary btn-block mb-4" type="submit">Submit</button>
       </form>
+      </container>
     </section>
   );
 }

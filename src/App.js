@@ -34,12 +34,9 @@ function App() {
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
       />
-
-      <main>
         <div>
           <View currentCategory={currentCategory}></View>
         </div>
-      </main>
       <Footer />
     </div>
   );
