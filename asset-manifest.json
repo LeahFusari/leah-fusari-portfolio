@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/leah-fusari-portfolio/static/css/main.de32e114.css",
+    "main.js": "/leah-fusari-portfolio/static/js/main.c59da0d1.js",
+    "static/media/LeahProfilePic.jpg": "/leah-fusari-portfolio/static/media/LeahProfilePic.f7c9428045816f3cdaba.jpg",
+    "static/media/White-Mountains.jpg": "/leah-fusari-portfolio/static/media/White-Mountains.e4290875bd98defe9be3.jpg",
+    "static/media/holidayex.jpg": "/leah-fusari-portfolio/static/media/holidayex.6cc17b9c80399441f9db.jpg",
+    "static/media/outdoors.jpg": "/leah-fusari-portfolio/static/media/outdoors.616e3f748813554489f4.jpg",
+    "static/media/runbuddy.jpg": "/leah-fusari-portfolio/static/media/runbuddy.5ba979e8cc67e4a6dd6f.jpg",
+    "static/media/horision.jpg": "/leah-fusari-portfolio/static/media/horision.67cc581d851334785fee.jpg",
+    "static/media/weather.jpg": "/leah-fusari-portfolio/static/media/weather.79e7954199f7f4ca6479.jpg",
+    "static/media/guitar.jpg": "/leah-fusari-portfolio/static/media/guitar.a309c007aaac6a4b1a8f.jpg",
+    "static/media/resume.pdf": "/leah-fusari-portfolio/static/media/resume.cf371ffa5dca504455f4.pdf",
+    "static/media/rockhound.jpg": "/leah-fusari-portfolio/static/media/rockhound.06974dc699d7ec2cd275.jpg",
+    "static/media/htmlcssjs.jpg": "/leah-fusari-portfolio/static/media/htmlcssjs.c63c745cb935b1b4369b.jpg",
+    "static/media/takeorleave.jpg": "/leah-fusari-portfolio/static/media/takeorleave.cc957bb633797c2115b4.jpg",
+    "static/media/react.jpg": "/leah-fusari-portfolio/static/media/react.efccb116e443bbf6ffa6.jpg",
+    "static/media/karate.jpg": "/leah-fusari-portfolio/static/media/karate.5a03c061aa371f826f2a.jpg",
+    "static/media/MySQL.jpg": "/leah-fusari-portfolio/static/media/MySQL.658213c2f12ef841f107.jpg",
+    "static/media/restful.jpg": "/leah-fusari-portfolio/static/media/restful.eb5418c02fb2343d4590.jpg",
+    "static/media/mongodb.jpg": "/leah-fusari-portfolio/static/media/mongodb.c964002ecef4971216d0.jpg",
+    "index.html": "/leah-fusari-portfolio/index.html",
+    "main.de32e114.css.map": "/leah-fusari-portfolio/static/css/main.de32e114.css.map",
+    "main.c59da0d1.js.map": "/leah-fusari-portfolio/static/js/main.c59da0d1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de32e114.css",
+    "static/js/main.c59da0d1.js"
+  ]
+}
