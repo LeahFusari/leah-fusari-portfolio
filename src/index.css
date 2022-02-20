@@ -10,7 +10,8 @@
   --secondary: #afbfd6;
   --tertiary-fade: rgb(48, 87, 130, 0.6);
   --tertiary: rgb(48, 87, 130);
-  --light: #fafafa;
+  --light: rgb(250, 250, 250);
+  --light-fade: rgb(250, 250, 250, 0.6);
   --dark: #000000;
   --darker: #111111;
   --error: rgb(228, 46, 1);
@@ -97,7 +98,7 @@ a {
 } */
 
 header {
-  background-color: var(--sky-fade);
+  /* background-color: var(--sky-fade); */
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -322,6 +323,10 @@ label:active {
   text-align: center;
 }
 
+.cards{
+  animation: loader 3s;
+}
+
 section {
   font-family: "Poiret One", cursive;
 }
@@ -377,13 +382,13 @@ a {
   color: var(--tertiary);
 }
 
-#about-text {
+/* #about-text {
   padding: 0px 30px;
-}
+} */
 
-#about-text p{
+/* #about-text p{
   font-size: 20px;
-}
+} */
 
 .about-section, .header-content{
   display: flex;
@@ -392,11 +397,36 @@ a {
 }
 .p-img {
   border-radius: 50%;
+  margin: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--tertiary);
+  animation: loader 6s;
 }
 
+.blurb{
+  background-color: var(--light-fade);
+  color:var(--tertiary);
+  text-align: center;
+  margin: 5px;
+  border-radius:15cm;
+}
+
+.blurb > p{
+  margin: 20px 50px;
+}
 footer{
-  background-color: var(--sky);
+  background-color: var(--sky-fade);
   color: var(--light);
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 9999;
+  padding: 0px !important;
+}
+
+.foot-div{
+  padding: 0px !important;
 }
 
 .foot-anchor-container {
@@ -407,3 +437,55 @@ footer{
 margin: 0px 10px;
 }
 
+.blinking{
+  animation:blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText{
+  0%{     color: var(--error);    }
+  49%{    color: var(--error); }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: var(--error);    }
+}
+
+@keyframes loader {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: y 90deg;
+    scale: 0.5;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  75% {
+    rotate: x 270deg;
+    border-radius: 50%;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@supports not (rotate: 0deg) {
+  @keyframes loader {
+    0% {
+      transform: rotateY(0deg);
+    }
+    25% {
+      transform: rotateY(90deg);
+    }
+    50% {
+      transfrom: rotateY(180deg);
+    }
+    75% {
+      transform: rotateY(270deg);
+      border-radius: 50%;
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+}

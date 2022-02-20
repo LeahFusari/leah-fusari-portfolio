@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="text-center text-lg-start">
-      <div className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div className=" foot-div d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div class="me-5 d-none d-lg-block">
           <span>Thank you for visiting.  Please click the links for more info.</span>
         </div>

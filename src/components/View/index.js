@@ -25,8 +25,8 @@ function View({ currentCategory }) {
   } else {
     return (
       <section>
-        <h1 className="view-name">{capitalizeFirstLetter(name)}</h1>
-        <p className="view-name">{description}</p>
+        {/* <h1 className="view-name">{capitalizeFirstLetter(name)}</h1> */}
+        <h2 className="view-name">{description}</h2>
         <PhotoList category={name} />
       </section>
     )
