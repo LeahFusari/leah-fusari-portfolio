@@ -1,6 +1,6 @@
 {
-  "name": "leah-fusari-portfolio",
   "homepage": "http://leahfusari.github.io/leah-fusari-portfolio/",
+  "name": "leah-fusari-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
