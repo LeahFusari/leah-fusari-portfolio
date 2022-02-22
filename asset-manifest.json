@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/leah-fusari-portfolio/static/css/main.de32e114.css",
+    "main.css": "/leah-fusari-portfolio/static/css/main.d00446ad.css",
     "main.js": "/leah-fusari-portfolio/static/js/main.c59da0d1.js",
     "static/media/LeahProfilePic.jpg": "/leah-fusari-portfolio/static/media/LeahProfilePic.f7c9428045816f3cdaba.jpg",
     "static/media/White-Mountains.jpg": "/leah-fusari-portfolio/static/media/White-Mountains.e4290875bd98defe9be3.jpg",
@@ -20,11 +20,11 @@
     "static/media/restful.jpg": "/leah-fusari-portfolio/static/media/restful.eb5418c02fb2343d4590.jpg",
     "static/media/mongodb.jpg": "/leah-fusari-portfolio/static/media/mongodb.c964002ecef4971216d0.jpg",
     "index.html": "/leah-fusari-portfolio/index.html",
-    "main.de32e114.css.map": "/leah-fusari-portfolio/static/css/main.de32e114.css.map",
+    "main.d00446ad.css.map": "/leah-fusari-portfolio/static/css/main.d00446ad.css.map",
     "main.c59da0d1.js.map": "/leah-fusari-portfolio/static/js/main.c59da0d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.de32e114.css",
+    "static/css/main.d00446ad.css",
     "static/js/main.c59da0d1.js"
   ]
 }
