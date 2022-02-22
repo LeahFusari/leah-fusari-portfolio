@@ -1,5 +1,5 @@
 {
-  "homepage": "https://leahfusari.github.io/leah-fusari-portfolio/",
+  "homepage": "https://LeahFusari.github.io/leah-fusari-portfolio/",
   "name": "leah-fusari-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
