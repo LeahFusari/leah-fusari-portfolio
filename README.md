@@ -66,3 +66,5 @@ If you wish to view more of my projects go to https://github.com/LeahFusari
 ![Screenshot 2022-02-20 132723](https://user-images.githubusercontent.com/87339742/154858066-cd90fb64-b924-4824-984f-0b6488fb3c14.jpg)
 
 ## Deployed Application 
+
+https://leahfusari.github.io/leah-fusari-portfolio/
