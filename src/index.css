@@ -29,10 +29,10 @@ body {
   padding: 0;
   font-weight: 600;
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 25px;
   letter-spacing: 0.1em;
   color: var(--light);
-  font-family: "Poiret One", cursive;
+  font-family: "Permanent Marker", cursive;
   background-image: url(./assets/images/White-Mountains.jpg);
   
 }
@@ -96,7 +96,7 @@ header a {
 .view-name {
   text-align: center;
   width: 100%;
-  color: var(--tertiary)
+  color: var(--light)
 }
 
 button {
@@ -224,7 +224,7 @@ label:active {
 }
 
 .label > h4 {
-  font-family: "Poiret One", cursive;
+  font-family: "Permanent Marker", cursive;
   color: var(--light);
 }
 
@@ -238,7 +238,7 @@ label:active {
 }
 
 section {
-  font-family: "Poiret One", cursive;
+  font-family: "Permanent Marker", cursive;
 }
 
 a {
