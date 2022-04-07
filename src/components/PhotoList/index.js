@@ -31,7 +31,7 @@ const PhotoList = ({ category }) => {
     {
       name: 'Trail Talk',
       category: 'portfolio',
-      description: 'Interactive full-stack group project using REACT, MongoDB, GraphQL.  A social media-type app where people can trade items.  I worked on the back end using Express.js and MySQL.',
+      description: 'Interactive full-stack MERN group project using REACT, MongoDB, GraphQL.  A social media-type app where people can talk about the national parks they have visited.  I worked on the back end using Express.js and MySQL.',
       filename: 'TrailTalk.jpg',
       url: 'https://pacific-shelf-58337.herokuapp.com/'
     },
