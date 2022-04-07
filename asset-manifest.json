@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/leah-fusari-portfolio/static/css/main.d00446ad.css",
-    "main.js": "/leah-fusari-portfolio/static/js/main.c59da0d1.js",
+    "main.js": "/leah-fusari-portfolio/static/js/main.6cb19ac3.js",
     "static/media/LeahProfilePic.jpg": "/leah-fusari-portfolio/static/media/LeahProfilePic.f7c9428045816f3cdaba.jpg",
     "static/media/White-Mountains.jpg": "/leah-fusari-portfolio/static/media/White-Mountains.e4290875bd98defe9be3.jpg",
     "static/media/holidayex.jpg": "/leah-fusari-portfolio/static/media/holidayex.6cc17b9c80399441f9db.jpg",
     "static/media/outdoors.jpg": "/leah-fusari-portfolio/static/media/outdoors.616e3f748813554489f4.jpg",
+    "static/media/TrailTalk.jpg": "/leah-fusari-portfolio/static/media/TrailTalk.12a8224d60e25079c206.jpg",
     "static/media/runbuddy.jpg": "/leah-fusari-portfolio/static/media/runbuddy.5ba979e8cc67e4a6dd6f.jpg",
     "static/media/horision.jpg": "/leah-fusari-portfolio/static/media/horision.67cc581d851334785fee.jpg",
     "static/media/weather.jpg": "/leah-fusari-portfolio/static/media/weather.79e7954199f7f4ca6479.jpg",
@@ -21,10 +22,10 @@
     "static/media/mongodb.jpg": "/leah-fusari-portfolio/static/media/mongodb.c964002ecef4971216d0.jpg",
     "index.html": "/leah-fusari-portfolio/index.html",
     "main.d00446ad.css.map": "/leah-fusari-portfolio/static/css/main.d00446ad.css.map",
-    "main.c59da0d1.js.map": "/leah-fusari-portfolio/static/js/main.c59da0d1.js.map"
+    "main.6cb19ac3.js.map": "/leah-fusari-portfolio/static/js/main.6cb19ac3.js.map"
   },
   "entrypoints": [
     "static/css/main.d00446ad.css",
-    "static/js/main.c59da0d1.js"
+    "static/js/main.6cb19ac3.js"
   ]
 }
